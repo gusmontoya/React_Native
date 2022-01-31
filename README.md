@@ -27,11 +27,17 @@ Contact Us<br/>
 - Address us also provided.<br/>
 <br/>
 <p align="center">
-  <img alt="Light" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/login-sm.png?raw=true" width="20%">
+  <img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/login-sm.png?raw=true" alt="login" width="20%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/menu-sm.png?raw=true" width="20%">
+  <img  src="https://github.com/gusmontoya/React_Native/blob/main/components/images/menu-sm.png?raw=true" alt="menu" width="20%">
   &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/Reservation-sm.png?raw=true" width="20%">
+  <img alt="Dark" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/Reservation-sm.png?raw=true" alt="reservation" width="20%">
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/Campsite%20Info.png?raw=true" alt="info" width="20%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/Directory.png?raw=true" alt="directory" width="20%">
+  &nbsp; &nbsp; &nbsp; &nbsp;
+  <img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/fav.png?raw=true"  alt="favorite" width="20%">
 </p>
     
  ## What I Learned ##
