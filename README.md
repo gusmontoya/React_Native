@@ -26,11 +26,9 @@ Contact Us<br/>
 - Form to contact the company app.<br/>
 - Address us also provided.<br/>
 <br/>
-    <img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/login-sm.png?raw=true">
-    <img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/menu-sm.png?raw=true"> 
-    <img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/Reservation-sm.png?raw=true">
-
-    https://github.com/gusmontoya/React_Native/blob/main/assets/menu.png?raw=true
+    <img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/login-sm.png?raw=true"><img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/menu-sm.png?raw=true"><img src="https://github.com/gusmontoya/React_Native/blob/main/components/images/Reservation-sm.png?raw=true">
+    
+    
  ## What I Learned ##
   
     - Redux on mobile
