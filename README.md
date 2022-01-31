@@ -4,14 +4,12 @@
 
 This React Native Campsite App was built using React Native, to emplement coding teachings from Nucamp Coding Boot Camp. This is a scratch built app using Redux. This is app is a campsite reservation app. 
 
-## Plan of attack
+## Plan of attack ##
 Login: <br/>
 - Asks the user to login (not mandatory for this app).
-
 <br/>
 Home screen: <br/>
 - Gives information on the app and how to use it.<br/>
-
 <br/>
 Directory<br/>
 - Shows the campsites available for reservation..<br/>
@@ -22,8 +20,6 @@ Reserve Campsite<br/>
 <br/>
 My Favorites<br/>
 - User can select favorite campsites and save them.
-
-😊
 <br />
 Contact Us<br/>
 - Form to contact the company app.<br/>
@@ -34,7 +30,7 @@ Contact Us<br/>
     <img src="https://github.com/gusmontoya/React_Native/blob/main/assets/Reservation.png?raw=true">
 
     https://github.com/gusmontoya/React_Native/blob/main/assets/menu.png?raw=true
- ## What I Learned
+ ## What I Learned ##
   
     - Redux on mobile
 
