@@ -73,7 +73,7 @@ class Reservation extends Component {
     });
   }
 
-  async presentLocalNotification(date) {
+   async presentLocalNotification(date) {
     function sendNotification() {
       Notifications.setNotificationHandler({
         handleNotification: async () => ({
@@ -83,7 +83,7 @@ class Reservation extends Component {
       Notifications.scheduleNotificationAsync({
         content: {
           title: "Your Campsite Reservation Search",
-          body: `search for ${date} requested`,
+          body: async`search for ${date} requested`,
         },
         trigger: null,
       });

@@ -1,26 +1,26 @@
 
-import Home from './HomeComponent';
-import About from "./AboutComponent";
-import CampsiteInfo from './CampsiteInfoComponent';
-import Constants from 'expo-constants';
-import Contact from "./ContactComponent";
-import Directory from './DirectoryComponent';
-import Favorites from './FavoritesComponent';
 import React, { Component } from 'react';
+import Home from './HomeComponent';
+import Directory from './DirectoryComponent';
+import CampsiteInfo from './CampsiteInfoComponent';
+import About from "./AboutComponent";
+import Contact from "./ContactComponent";
 import Reservation from './ReservationComponent';
+import Favorites from './FavoritesComponent';
+import Constants from 'expo-constants';
+import Login from "./LoginComponent";
 import { Image, Platform, ScrollView, StyleSheet, Text, View, Alert, ToastAndroid } from 'react-native';
-import { connect } from 'react-redux';
-import { createAppContainer } from 'react-navigation';
-import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
+import NetInfo from '@react-native-community/netinfo';
 import { createStackNavigator } from 'react-navigation-stack';
+import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
+import { createAppContainer } from 'react-navigation';
+import { Icon } from 'react-native-elements';
+import SafeAreaView from 'react-native-safe-area-view';
+import { connect } from 'react-redux';
 import {
     fetchCampsites, fetchComments, fetchPromotions,
     fetchPartners
 } from '../redux/ActionCreators';
-import { Icon } from 'react-native-elements';
-import SafeAreaView from 'react-native-safe-area-view';
-import Login from './LoginComponent';
-import NetInfo from '@react-native-community/netinfo';
 
 
 const mapDispatchToProps = {
@@ -29,6 +29,7 @@ const mapDispatchToProps = {
     fetchPromotions,
     fetchPartners
 };
+
 const DirectoryNavigator = createStackNavigator(
     {
         Directory: {
@@ -53,8 +54,8 @@ const DirectoryNavigator = createStackNavigator(
             headerTintColor: '#fff',
             headerTitleStyle: {
                 color: '#fff'
-            }
-        }
+            },
+        },
     }
 );
 
@@ -323,20 +324,25 @@ const AppNavigator = createAppContainer(MainNavigator)
 
 class Main extends Component {
 
+    showNetinfo = async() => {
+        let connectionInfo = await NetInfo.fetch();
+        // if (connectionInfo) {
+            (Platform.OS === 'ios')
+                ? Alert.alert('Initial Network Connectivity Type:', connectionInfo.type)
+                : ToastAndroid.show('Initial Network Connectivity Type: ' +
+                    connectionInfo.type, ToastAndroid.LONG);
+    // }
+    }
+
     componentDidMount() {
         this.props.fetchCampsites();
         this.props.fetchComments();
         this.props.fetchPromotions();
         this.props.fetchPartners();
-        
-        NetInfo.fetch().then(connectionInfo => {
-            (Platform.OS === 'ios')
-                ? Alert.alert('Initial Network Connectivity Type:', connectionInfo.type)
-                : ToastAndroid.show('Initial Network Connectivity Type: ' +
-                    connectionInfo.type, ToastAndroid.LONG);
-        });
-
-        this.unsubscribeNetInfo = NetInfo.addEventListener(connectionInfo => {
+    
+        this.showNetinfo();
+    
+        this.unsubscribeNetInfo = NetInfo.addEventListener((connectionInfo) => {
             this.handleConnectivityChange(connectionInfo);
         });
     }
