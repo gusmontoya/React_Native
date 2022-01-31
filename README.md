@@ -27,11 +27,11 @@ Contact Us<br/>
 - Address us also provided.<br/>
 <br/>
 <p align="center">
-  <img alt="Light" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/login-sm.png?raw=true" width="45%">
+  <img alt="Light" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/login-sm.png?raw=true" width="25%">
 &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/menu-sm.png?raw=true" width="45%">
+  <img alt="Dark" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/menu-sm.png?raw=true" width="25%">
   &nbsp; &nbsp; &nbsp; &nbsp;
-  <img alt="Dark" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/Reservation-sm.png?raw=true" width="45%">
+  <img alt="Dark" src="https://github.com/gusmontoya/React_Native/blob/main/components/images/Reservation-sm.png?raw=true" width="25%">
 </p>
     
  ## What I Learned ##
